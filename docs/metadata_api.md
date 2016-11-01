@@ -24,7 +24,7 @@ None
 Returns an ordered array of the most commonly used words in the corpous.
 
 ### Fields:<br>
-acts, fromScene, toScene, characters
+acts, from_scene, to_scene, characters
 
 ### Returns:<br>
 [{"word": \_\_\_, "count": \_\_\_}, ...]
@@ -37,10 +37,10 @@ acts, fromScene, toScene, characters
 Returns an ordered array of the characters that speak after each other most frequently.
 
 ### Fields:<br>
-acts, fromSecen, toScene, characters
+acts, from_scene, to_scene, characters
 
 ### Returns:<br>
-[{"character1": \_\_\_, "character2": \_\_\_, "count": \_\_\_, "percentage": \_\_\_}, ...]
+[{"character\_1": \_\_\_, "character\_2": \_\_\_, "count": \_\_\_, "percentage": \_\_\_}, ...]
 
 -----
 ## Parsed Play List
@@ -50,12 +50,12 @@ acts, fromSecen, toScene, characters
 Returns a json
 
 ### Fields:<br>
-NONE
+None
 
 ### Returns:<br>
-[{"entryType": \_\_\_, ...(entry specific properties)...}, ...]
+[{"entry_type": \_\_\_, ...(entry specific properties)...}, ...]
 
-### PML V0.1 EntryTypes/properties are:<br>
+### PML V0.1 entry_types:properties are<br>
 <li>Dialogue: characterName, text</li>
 <li>StageDirection: direction</li>
 <li>Entrance: characterNames</li>

@@ -1,29 +1,35 @@
-# Welcome to PlayAnalyzer.com's API Documentation
+# Welcome!
 
-Most non-technical users can utilize PML and the insights it can provide into a text using the resources on <a href="playanalyzer.com">PlayAnalyzer.com.</a>  However, for the more technically inclined this documentation should provide you insight into the workings
+
+## Who's this documentation for?
+
+<a href="playanalyzer.com">PlayAnalyzer.com</a> is built on top of a RESTful server that processes PML and produces metadata and visualization outputs. While most users can gain insight into a play through the web interface, this documentation exposes the full API for users who want to be able to quickly batch generate insights and analyses of plays.
+
+## How to get started
+
+Most users should use the play analyzer <a href="https://github.com/kevinmkarol/playAnalyzer_client_scripts">cleint scripts</a> repository to make requests to the server using python.  Just replace the file path parameter and start generating outputs with single python commands.
+
+If you haven't had a chance to mark up your own texts into PML yet, but would like to see what this API can do, a <a href="https://github.com/kevinmkarol/playAnalyzer_play_repository">play repository</a> of public domain texts is also available.
 
 ## Site Map
 The site pages document the following information:<br>
-<li>PML Spec: This page details the specifics of how PML markup works, the principles behind it, and documents the latest PML specification</li>
-<li>Metadata API: The api for requesting metadata information derived from the text.</li>
-<li>Visualization API: The api for requesting pngs that graphically display properties of the play derived from the text.</li>
-
-## Field Descriptions
-All API requests require the following fields:<br>
-<b>fieldName</b>:'pmlText' <b>value</b>: the marked up play text
-<b>fieldName</b>:'type' <b>value</b>: the vizualization type generate.
-
-Each request type may specify some subset of the fields explained below.  These fields narrow the portions of the text that will be considered part of the corpous to return the metadata from.<br>
-<b>None</b> - no additional fields required.<br>
-<b>acts</b> - A comma seperated list of acts to use the text from.  Unspecified means the whole show.<br>
-<b>fromScene</b> - The scene in the first listed act to start from.<br>
-<b>toScene</b> - The scene in the last listed act to end with.<br>
-<b>characters</b> - A comma seperated list of characters to use the dialogue of.<br>
-
+<b>PML Spec:</b> Documents Play Markup Language (PML) syntax and design philosophy<br>
+<b>Metadata API:</b> Documents metadata outputs available and the return JSON syntax<br>
+<b>Visualization API:</b> Documents requests for play visualizations to generate pngs<br>
 
 ## Making API Requests
-A collection of <a href="http://kevinmkarol.com">python scripts</a> has been provided to make the process of submitting API requests as easy as possible.
+All requests are POST requests to api.playAnalyzer.com/api_type.  
 
-All REST requests should be sent via POST request to api.playAnalyzer.com/api_type.  If you encounter issues using the api, have suggestions for future visualizations or metadata, or would like to have studies you conduct using this API featured on PlayAnalyzer.com, please contact us <a href="mailto:kevinmkarol+playAnalyzerApi@gmail.com">here.</a>
+All API requests require the following fields:<br>
+<b>pml_text</b> - the marked up play text as a file<br>
+<b>type</b> - the output type to generate<br>
+
+Where appropriate the api often allow the corpous to be refined with the following parameters:<br>
+<b>acts</b> - A comma seperated list of acts.  Unspecified means the whole show.<br>
+<b>from_scene</b> - The scene in the first listed act to start from.<br>
+<b>to_scene</b> - The scene in the last listed act to end with.<br>
+<b>characters</b> - A comma seperated list of character names<br>
 
 
+## Feedback?
+If you encounter issues, have suggestions for future visualizations or metadata, or would like to have studies you conduct using this API featured on PlayAnalyzer.com, please contact us <a href="mailto:kevinmkarol+playAnalyzerApi@gmail.com">here.</a>
