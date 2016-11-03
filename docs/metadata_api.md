@@ -5,7 +5,7 @@ All metadata api requests should be made via POST request to api.playAnalyzer.co
 
 -----
 ## Character List
-### Type: "character_list"<br>
+### Type: character_list<br>
 
 ### Description:<br>
 Returns all of the characters in the text.
@@ -18,7 +18,7 @@ None
 
 -----
 ## Most Common Words
-### Type: "most\_common_words"<br>
+### Type: most\_common_words<br>
 
 ### Description:<br>
 Returns an ordered array of the most commonly used words in the corpous.
@@ -31,7 +31,7 @@ acts, from_scene, to_scene, characters
 
 -----
 ## Character Speech Flow
-### Type: "character\_speech_flow"<br>
+### Type: character\_speech_flow<br>
 
 ### Description:<br>
 Returns an ordered array of the characters that speak after each other most frequently.
@@ -43,8 +43,34 @@ acts, from_scene, to_scene, characters
 [{"character\_1": \_\_\_, "character\_2": \_\_\_, "count": \_\_\_, "percentage": \_\_\_}, ...]
 
 -----
+## Concordance
+### Type: concordance<br>
+
+### Description:<br>
+Returns every instance of the requested word or phrase in context
+
+### Fields:<br>
+acts, from_scene, to_scene, characters, words
+
+### Returns:<br>
+String with concordance occurances seperated by newline
+
+-----
+## Common context
+### Type: common\_contexts<br>
+
+### Description:<br>
+Returns a list of words that occur within the same contexts as the requested word.  Submitting more than one word is an and request (words that occur in the context of both) not an or request.
+
+### Fields:<br>
+acts, from_scene, to_scene, characters, words
+
+### Returns:<br>
+[{"word": \_\_\_, "context": \_\_\_}, ...]
+
+-----
 ## Parsed Play List
-### Type: "parsed\_play_list"<br>
+### Type: parsed\_play_list<br>
 
 ### Description:<br>
 Returns a json

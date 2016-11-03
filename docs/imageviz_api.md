@@ -5,7 +5,7 @@ All metadata api requests should be made via POST request to api.playAnalyzer.co
 
 -----
 ## Scene Rhythm Chart
-### Type: "scene\_rhythm\_chart"<br>
+### Type: scene\_rhythm\_chart<br>
 
 ### Description:<br>
 Generates a visualization of approximate scene length based on word count to show the overall rhythm of the show.
@@ -15,7 +15,7 @@ None
 
 -----
 ## French Scene Chart
-### Type: "french\_scene\_chart"<br>
+### Type: french\_scene\_chart<br>
 
 ### Description:<br>
 Generates a chart that marks all french scenes.
@@ -25,7 +25,7 @@ None
 
 -----
 ## Word Occurance Chart
-### Type: "word\_occurances\_chart"<br>
+### Type: word\_occurances\_chart<br>
 
 ### Description:<br>
 Generates a chart that marks all occurances of a comma seperated list of words within the corpous spoken by specified characters.
@@ -35,7 +35,7 @@ acts, from_scene, to_scene, characters, words
 
 -----
 ## Dialogue Shape Chart
-### Type: "dialogue\_shape\_chart"<br>
+### Type: dialogue\_shape\_chart<br>
 
 ### Description:<br>
 Generates a chart that displays line length based on word count along the y-axis with subsequent lines laid out along the x-axis.  Charaters that are passed in will have their lines highlighted on the chart.
@@ -45,7 +45,7 @@ acts, from_scene, to_scene, characters
 
 -----
 ## Line Shape Chart
-### Type: "line\_shape\_chart"<br>
+### Type: line\_shape\_chart<br>
 
 ### Description:<br>
 Generates the same style of chart as the Dialogue Shape Chart, however instead of highlighting charcters specfied, it displays only lines by the characters specified.
@@ -55,7 +55,7 @@ acts, from_scene, to_scene, characters
 
 -----
 ## Character Speech Chart
-### Type: "character\_speech_chart"<br>
+### Type: character\_speech_chart<br>
 
 ### Description:<br>
 Generates a weighted graph of the connection between characters based on how frequently they speak after each other.
