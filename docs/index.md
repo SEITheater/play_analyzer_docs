@@ -7,9 +7,9 @@
 
 ## How to get started
 
-Most users should use the play analyzer <a href="https://github.com/kevinmkarol/playAnalyzer_client_scripts">cleint scripts</a> repository to make requests to the server using python.  Just replace the file path parameter and start generating outputs with single python commands.
+Most users should use the play analyzer <a href="https://github.com/kevinmkarol/play_analyzer_api_interface">api interface</a> repository to make requests to the server using python.  Just replace the file path parameter and start generating outputs with single python commands.
 
-If you haven't had a chance to mark up your own texts into PML yet, but would like to see what this API can do, a <a href="https://github.com/kevinmkarol/playAnalyzer_play_repository">play repository</a> of public domain texts is also available.
+If you haven't had a chance to mark up your own texts into PML yet, but would like to see what this API can do, a <a href="https://github.com/kevinmkarol/play_analyzer_play_repository">play repository</a> of public domain texts is also available.
 
 ## Site Map
 The site pages document the following information:<br>
