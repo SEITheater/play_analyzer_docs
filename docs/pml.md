@@ -15,16 +15,16 @@ After the field type specifier (which is preceeded by an @ sign to distinguish t
 
 ## PML V0.1
 (Quotes matter)<br>
-@play{title: “place_holder”, author: “place_holder”} - information about the play<br>
-@v{number: place_holder} - The pml version number<br>
+@play{"title": “place_holder”, "author": “place_holder”} - information about the play<br>
+@v{"number": place_holder} - The pml version number<br>
 
-@a{number: place_holder} - new act<br>
-@s{number: place_holder} - new scene<br>
+@a{"number": place_holder} - new act<br>
+@s{"number": place_holder} - new scene<br>
 
-@l{name: “place_holder”} - A line of dialogue spoken by a character<br>
+@l{"name": “place_holder”} - A line of dialogue spoken by a character<br>
 @d{}  - A stage direction<br>
 
-@e{names:[“place_holder”, ”place_holder”]} - Character enters<br>
-@x{names:[“place_holder”, ”place_holder”]} - Character exits<br>
-@c{start: place_holder, stop:place_holder} - A comment or annotation for the preceding line spanning the two listed word numbers.<br>
+@e{"names":[“place_holder”, ”place_holder”]} - Character enters<br>
+@x{"names":[“place_holder”, ”place_holder”]} - Character exits<br>
+@c{"start": place_holder, "stop": place_holder} - A comment or annotation for the preceding line spanning the two listed word numbers.<br>
 

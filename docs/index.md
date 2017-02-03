@@ -3,13 +3,13 @@
 
 ## Who's this documentation for?
 
-<a href="playanalyzer.com">PlayAnalyzer.com</a> is built on top of a RESTful server that processes PML and produces metadata and visualization outputs. While most users can gain insight into a play through the web interface, this documentation exposes the full API for users who want to be able to quickly batch generate insights and analyses of plays.
+<a href="http://playanalyzer.com">PlayAnalyzer.com</a> is built on top of a RESTful server that processes PML and produces metadata and visualization outputs. While most users can gain insight into a play through the web interface, this documentation exposes the full API for users who want to be able to quickly batch generate insights and analyses of plays.
 
 ## How to get started
 
-Most users should use the play analyzer <a href="https://github.com/kevinmkarol/play_analyzer_api_interface">api interface</a> repository to make requests to the server using python.  Just replace the file path parameter and start generating outputs with single python commands.
+Most users should use the play analyzer <a href="https://github.com/SEITheater/play_analyzer_api_templates">api templates</a> repository to make requests to the server using python.  Just replace the file path parameter and start generating outputs with single python commands.
 
-If you haven't had a chance to mark up your own texts into PML yet, but would like to see what this API can do, a <a href="https://github.com/kevinmkarol/play_analyzer_play_repository">play repository</a> of public domain texts is also available.
+If you haven't had a chance to mark up your own texts into PML yet, but would like to see what this API can do, a <a href="https://github.com/SEITheater/pml_play_repository">play repository</a> of public domain texts is also available.
 
 ## Site Map
 The site pages document the following information:<br>
@@ -32,4 +32,4 @@ Where appropriate the api often allow the corpous to be refined with the followi
 
 
 ## Feedback?
-If you encounter issues, have suggestions for future visualizations or metadata, or would like to have studies you conduct using this API featured on PlayAnalyzer.com, please contact us <a href="mailto:kevinmkarol+playAnalyzerApi@gmail.com">here.</a>
+If you encounter issues, have suggestions for future visualizations or metadata, or would like to have studies you conduct using this API featured on PlayAnalyzer.com, please contact us <a href="mailto:admin@seitheater.com">here.</a>

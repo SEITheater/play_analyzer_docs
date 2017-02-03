@@ -1,9 +1,9 @@
 site_name: API Docs
 site_url: http://docs.PlayAnalyzer.com
 site_description: Documentation of the PlayAnalyzer.com REST API for visualization generation and metadata analysis of plays.
-site_author: Kevin M. Karol
+site_author: SEI Theater
 site_favicon: fav.png
-copyright: "Kevin M. Karol 2016"
+copyright: "SEI Theater 2017"
 google_analytics: ['UA-64791632-5', 'docs.PlayAnalyzer.com']
 pages:
     - 'Introduction': 'index.md'
